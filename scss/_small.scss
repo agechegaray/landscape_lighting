@@ -1,0 +1,143 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        text-align: right;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+    }
+}// end main
+
+.swiper, .swiper img {
+    width: 100%;
+    height: auto;
+}
+
+div.cards {
+    display: grid;
+    gap: $gutter;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+
+    section {
+        position: relative;
+        h2 {
+            font-size: 1.5rem;
+            color: $secondaryColor;
+            margin-bottom: 0.5rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+
+        img:first-of-type {
+            position: relative;
+            z-index: 1;
+        }
+
+        img:last-of-type {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+div.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: $gutter;
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7px;
+
+        img {
+            width: 150px;
+            height: 150px;
+            clip-path: circle(50% at 50% 50%);
+            margin-bottom: 0.5rem;
+            transition: transform 1s;
+            &:hover {
+                transform: rotate(15deg);
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 80%;
+        }
+    }
+}
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor;
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $tertiaryColor;
+    text-align: center;
+}// end footer

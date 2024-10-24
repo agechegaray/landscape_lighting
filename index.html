@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>LightScape Designs</title>
+    <meta name="description" content="Landscape and Lighting Assignment">
+    <meta name="author" content="Agustina Echegaray">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Fav Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" alt="logo">
+        <a href="tel:+1234567890">+1 (234) 567-890</a>
+        <button id="theButton"></button>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <ul id="theNav">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Services</a></li>
+            <li class="parent"><a href="#">Gallery</a>
+                <ul>
+                    <li class="second-list">Before and After Photos</li>
+                    <li class="second-list">Project Showcase</li>
+                    <li class="second-list">Landscape Lighting Displays</li>
+                    <li class="second-list">Garden Designs</li>
+                </ul>
+            </li>
+            <li class="parent"><a href="#">About Us</a>
+                <ul>
+                    <li class="second-list">Company History</li>
+                    <li class="second-list">Meet the Team</li>
+                    <li class="second-list">Certifications and Awards</li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/slide01-small.jpg" media="(max-width: 400px)">
+                        <source srcset="images/slide01-medium.jpg" media="(max-width: 800px)">
+                        <img src="images/slide01-large.jpg" alt="slide 1" width="16" height="5">
+                    </picture>
+                </div> 
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/slide02-small.jpg" media="(max-width: 400px)">
+                        <source srcset="images/slide02-medium.jpg" media="(max-width: 800px)">
+                        <img src="images/slide02-large.jpg" alt="slide 2" width="16" height="5">
+                    </picture>
+                </div> 
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/slide03-small.jpg" media="(max-width: 400px)">
+                        <source srcset="images/slide03-medium.jpg" media="(max-width: 800px)">
+                        <img src="images/slide03-large.jpg" alt="slide 3" width="16" height="5">
+                    </picture>
+                </div> 
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="cards">
+            <section>
+                <h2>Landscape and Installation</h2>
+                <img src="images/design.jpg" width="500" height="333" alt="design">
+                <img src="images/grass.png" width="500" height="333" alt="grass mask">
+            </section>
+
+            <section>
+                <h2>Outdoor Lighting Solutions</h2>
+                <img src="images/outdoor_lighting.jpg" width="500" height="333" alt="outdoor lighting">
+                <img src="images/lines.png" width="500" height="333" alt="lines mask">
+            </section>
+
+            <section>
+                <h2>Lawn Care and Maintenance</h2>
+                <img src="images/lawn_care.jpg" width="500" height="333" alt="lawn care">
+                <img src="images/grass.png" width="500" height="333" alt="grass mask">
+            </section>
+
+            <section>
+                <h2>Seasonal Cleanup and Upgrades</h2>
+                <img src="images/seasonal.jpg" width="500" height="333" alt="seasonal">
+                <img src="images/lines.png" width="500" height="333" alt="lines mask">
+            </section>
+        </div>
+
+        <div class="reviews">
+            <section>
+                <img src="images/rachel_stevens.jpg" width="500" height="500" alt="rachel stevens">
+                <p>LightScape Designs transformed our backyard with their incredible lighting! 
+                    We wanted a warm, inviting atmosphere for evening get-togethers, and they exceeded 
+                    all expectations. The lights are not only beautiful but also energy-efficient. The 
+                    team was professional, and their attention to detail was impeccable. Our outdoor 
+                    space has become a magical extension of our home, thanks to their work. I highly 
+                    recommend them to anyone looking to elevate their outdoor space!</p>
+            </section>
+            <section>
+                <img src="images/josh_bennett.jpg" width="500" height="500" alt="josh bennett">
+                <p>I never realized how much lighting could change the feel of a space until LightScape 
+                    Designs worked their magic on our property. They completely revamped the lighting in
+                    our backyard, creating the perfect ambiance for outdoor dining and relaxing by the fire
+                    pit. The design they came up with was both practical and artistic, and their knowledge 
+                    of the latest lighting technology really impressed me. Now, we spend more time outside 
+                    in the evenings, and our backyard feels like a luxurious retreat. Their work is worth 
+                    every penny!</p>
+            </section>
+        </div>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p class="legal">&copy; <span id="year">x</span> &bull; Landscape and Lighting &bull; Agustina Echegaray</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/scripts.js" type="module"></script>
+</body>
+</html> 

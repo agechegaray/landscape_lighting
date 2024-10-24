@@ -1,0 +1,79 @@
+/* ------- Navigation BUTTON ------- */
+#theButton {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #555;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+
+    &::before {
+        content: "\2630";
+    }
+} // end #theButton
+
+#theButton.open::before {
+    content: "\2715";
+    font-size: 1.6rem;
+} // end open button
+
+/* ------- Navigation BAR ------- */
+#theNav {
+    background-color: $primaryColor;
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+        display: block;
+        padding: .75rem 2vw;
+        font-size: 1rem;
+        color: $tertiaryColor;
+        text-decoration: none;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    li.active a {
+        background-color: $tertiaryColor;
+        color: $primaryColor;
+    }
+
+    li a:hover {
+        background-color: rgba(255,255,255,.2);
+    }
+
+    &.open {
+        height: auto;
+        color: $tertiaryColor;
+        font-size: .8rem;
+    }
+}
+
+.parent.a::after {
+    content: "\25BC";
+    font-size: .75rem;
+    color: rgba(255,255,25,0.5);
+    float: right;
+}
+
+.parent ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: $primaryColor;
+    display: none;
+}
+
+.parent:hover ul {
+    display: block;
+}
+
+.second-list {
+    padding: .3rem 2vw;
+}
+
+.second-list:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

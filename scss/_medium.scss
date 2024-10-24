@@ -1,0 +1,77 @@
+/* NAVIGATION STUFF GOES HERE  */
+#theButton {
+    display: none;
+}
+
+#theNav {
+    background-color: $primaryColor;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+        border-right: 1px solid rgba(0,0,0,0.1);
+    }
+
+    li a {
+        padding: 0.9rem 1.2rem;
+        display: block;
+        color: $tertiaryColor;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    li.parent > a::before {
+        content: "\25BC";
+        font-size: .65rem;
+        color: rgba(255,255,255,0.5);
+    }
+
+    li.active a {
+        background-color: $tertiaryColor;
+        color: $primaryColor;
+    }
+
+    // rules for the sub menu items
+    li ul {
+        background-color: $primaryColor;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 10;
+    }
+    
+    /* this displays the menus as drop downs */
+    li:hover ul {
+        display: block;
+        color: $tertiaryColor;
+        font-size: .8rem;
+    }
+}
+
+.second-list {
+    padding: .3rem 2vw;
+}
+
+.second-list:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+div.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
